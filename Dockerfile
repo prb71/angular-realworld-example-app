@@ -1,4 +1,4 @@
-FROM public.ecr.aws/d6z3w8v2/node-slim:latest
+FROM public.ecr.aws/docker/library/node:18.12-slim
 RUN mkdir /opt/ui && chmod -R 777 /opt/ui
 ADD . /opt/ui
 WORKDIR  /opt/ui
